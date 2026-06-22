@@ -6,11 +6,11 @@ function printUser(user:printAccount | undefined = account.at(-1)) {
     console.log(`მომხმარებელი ვერ მოიძებნა`);
     return;
   }
-
-  if (user.verified) {
-    console.log(user.name);
+const userEl = document.getElementById("user")
+  if (user.verified && userEl) {
+     userEl.innerHTML = user.name;
   }else{
-    console.log(`მომხმარებელი ${user.name} არ არის გადამოწმებული`);
+    console.log(`მომხმარებელი ${user.name} არ არის გადამოწმებული`); 
   }
 }
 
