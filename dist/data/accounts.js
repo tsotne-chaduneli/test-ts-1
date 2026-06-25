@@ -5,5 +5,4 @@ const account = [
     },
 ];
 export { account };
-
 //# sourceMappingURL=accounts.js.map

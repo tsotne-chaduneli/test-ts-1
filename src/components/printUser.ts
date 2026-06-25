@@ -8,7 +8,7 @@ function printUser(user:printAccount | undefined = account.at(-1)) {
   }
 const userEl = document.getElementById("user")
   if (user.verified && userEl) {
-     userEl.innerHTML = user.name;
+     userEl.innerHTML = `<h1>${user.name}</h1>`;
   }else{
     console.log(`მომხმარებელი ${user.name} არ არის გადამოწმებული`); 
   }
